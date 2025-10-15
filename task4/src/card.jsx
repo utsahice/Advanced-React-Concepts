@@ -1,12 +1,12 @@
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import '../public/vite.svg'
+import '../public/c1.jpg'
 
 function CardDemo() {
   return (
     <CardGroup>
       <Card>
-        <Card.Img variant="top" src="vite.svg" />
+        <Card.Img variant="top" src="c1.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -19,7 +19,7 @@ function CardDemo() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="vite.svg" />
+        <Card.Img variant="top" src="c1.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -32,7 +32,7 @@ function CardDemo() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="vite.svg" />
+        <Card.Img variant="top" src="c1.jpg" />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>

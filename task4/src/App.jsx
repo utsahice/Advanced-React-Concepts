@@ -1,25 +1,13 @@
-import { React } from 'react'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar } from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import NavbarClass from './navbar';
-import CardDemo from './card';
+import React from 'react';
+import ProductList from './components/ProductList';
 
-
-function App() {
-
+const App = () => {
   return (
-    <>
-    <Router>
-      <NavbarClass/>
-      <Routes>
-          <Route path="/" element={<CardDemo />} />
+    <div style={{ padding: '20px' }}>
+      <h1>E-commerce Store</h1>
+      <ProductList />
+    </div>
+  );
+};
 
-      </Routes>
-    </Router>
-    </>
-  )
-}
-
-export default App
+export default App;
