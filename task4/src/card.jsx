@@ -1,12 +1,12 @@
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import Card from 'react-bootstrap/Card'
+import CardGroup from 'react-bootstrap/CardGroup'
 import '../public/c1.jpg'
 
 function CardDemo() {
   return (
     <CardGroup>
       <Card>
-        <Card.Img variant="top" src="c1.jpg" />
+        <Card.Img variant='top' src='c1.jpg' />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -15,11 +15,11 @@ function CardDemo() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className='text-muted'>Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="c1.jpg" />
+        <Card.Img variant='top' src='c1.jpg' />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -28,11 +28,11 @@ function CardDemo() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className='text-muted'>Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="c1.jpg" />
+        <Card.Img variant='top' src='c1.jpg' />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -42,11 +42,11 @@ function CardDemo() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className='text-muted'>Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
     </CardGroup>
-  );
+  )
 }
 
-export default CardDemo;
+export default CardDemo

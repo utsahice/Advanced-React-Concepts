@@ -13,16 +13,23 @@ export default function Todo() {
 
   return (
     <div>
-      <h2 data-testid="title">My To-Do List</h2>
-      <input data-testid="todo-input" aria-label="Add task" value={text} onChange={(e) => setText(e.target.value)} />
-      <button data-testid="add-button" onClick={add}>Add</button>
+      <h2 data-testid='title'>My To-Do List</h2>
+      <input
+        data-testid='todo-input'
+        aria-label='Add task'
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      <button data-testid='add-button' onClick={add}>
+        Add
+      </button>
       <ul>
         {items.map((t, i) => (
-          <li key={`${t}-${i}`} data-testid="task">{t}</li>
+          <li key={`${t}-${i}`} data-testid='task'>
+            {t}
+          </li>
         ))}
       </ul>
     </div>
   )
 }
-
-

@@ -13,7 +13,7 @@ export default function ProductList() {
       <ul>
         {mockProducts.map((p) => (
           <li key={p.id}>
-            {p.title} - ${p.price} {' '}
+            {p.title} - ${p.price}{' '}
             <Link to={`/products/${p.id}`}>View details</Link>
           </li>
         ))}
@@ -22,5 +22,3 @@ export default function ProductList() {
     </div>
   )
 }
-
-

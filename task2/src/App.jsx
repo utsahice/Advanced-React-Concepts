@@ -1,6 +1,6 @@
-import React from 'react';
-import Counter1 from './components/component1';
-import Counter2 from './components/component2';
+import React from 'react'
+import Counter1 from './components/component1'
+import Counter2 from './components/component2'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Counter1 />
       <Counter2 />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

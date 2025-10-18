@@ -16,14 +16,16 @@ export default function App() {
       <Todo />
       <hr />
       <FormInput
-        label="Email"
-        name="email"
+        label='Email'
+        name='email'
         value={email}
-        onChange={(e) => { setEmail(e.target.value); validate(e.target.value) }}
+        onChange={(e) => {
+          setEmail(e.target.value)
+          validate(e.target.value)
+        }}
         onBlur={(e) => validate(e.target.value)}
         error={error}
       />
     </div>
   )
 }
-
