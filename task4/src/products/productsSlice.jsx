@@ -1,17 +1,17 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import axios from 'axios'
 
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('https://fakestoreapi.com/products');
-      return response.data;
+      const response = await axios.get('https://fakestoreapi.com/products')
+      return response.data
     } catch (error) {
-      return rejectWithValue(error.response?.data || 'Failed to fetch products');
+      return rejectWithValue(error.response?.data || 'Failed to fetch products')
     }
-  }
-);
+  },
+)
 
 const productsSlice = createSlice({
   name: 'products',
@@ -25,18 +25,18 @@ const productsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {
-        state.loading = true;
-        state.error = null;
+        state.loading = true
+        state.error = null
       })
       .addCase(fetchProducts.fulfilled, (state, action) => {
-        state.loading = false;
-        state.items = action.payload;
+        state.loading = false
+        state.items = action.payload
       })
       .addCase(fetchProducts.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.payload;
-      });
+        state.loading = false
+        state.error = action.payload
+      })
   },
-});
+})
 
-export default productsSlice.reducer;
+export default productsSlice.reducer

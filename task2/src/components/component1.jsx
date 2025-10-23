@@ -1,8 +1,8 @@
-import React from 'react';
-import useCounter from '../counter';
+import React from 'react'
+import useCounter from '../counter'
 
 function Counter1() {
-  const { count, increment, decrement, reset } = useCounter(0, 1);
+  const { count, increment, decrement, reset } = useCounter(0, 1)
 
   return (
     <div>
@@ -12,7 +12,7 @@ function Counter1() {
       <button onClick={decrement}>-1</button>
       <button onClick={reset}>Reset</button>
     </div>
-  );
+  )
 }
 
-export default Counter1;
+export default Counter1
